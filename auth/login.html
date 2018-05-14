@@ -5,7 +5,6 @@
     <title>FirebaseUI Auth Demo</title>
     <script src="https://www.gstatic.com/firebasejs/live/4.3/firebase.js"></script>
     <script src="config.js"></script>
-    <script src="common.js"></script>
     <script src="dist/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="dist/firebaseui.css" />
     <style>
@@ -50,10 +49,7 @@
           }
         ],
         // Terms of service url.
-        'tosUrl': 'https://www.google.com',
-        'credentialHelper': CLIENT_ID && CLIENT_ID != 'YOUR_OAUTH_CLIENT_ID' ?
-            firebaseui.auth.CredentialHelper.GOOGLE_YOLO :
-            firebaseui.auth.CredentialHelper.ACCOUNT_CHOOSER_COM
+        'tosUrl': 'https://unknownhacker1125.github.io/tos',
       };
       // Initialize the FirebaseUI Widget using Firebase.
       var ui = new firebaseui.auth.AuthUI(firebase.auth());
