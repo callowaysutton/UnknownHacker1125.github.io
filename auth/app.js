@@ -32,7 +32,7 @@ function getUiConfig() {
         // Required to enable this provider in One-Tap Sign-up.
         authMethod: 'https://accounts.google.com',
         // Required to enable ID token credentials for this provider.
-        clientId: CLIENT_ID
+        clientId: 1080257457116-7vurffd1vmfifpfqmu4bvhecn98lc0u6.apps.googleusercontent.com
       },
       {
         provider: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
