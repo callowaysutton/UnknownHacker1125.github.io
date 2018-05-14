@@ -27,33 +27,17 @@ function getUiConfig() {
     'signInOptions': [
       // TODO(developer): Remove the providers you don't need for your app.
       {
-        provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+        provider: firebase.auth.GoogleAuthProvider.1080257457116-7vurffd1vmfifpfqmu4bvhecn98lc0u6.apps.googleusercontent.com,
         // Required to enable this provider in One-Tap Sign-up.
         authMethod: 'https://accounts.google.com',
         // Required to enable ID token credentials for this provider.
         clientId: CLIENT_ID
       },
       {
-        provider: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        scopes :[
-          'public_profile',
-          'email',
-          'user_likes',
-          'user_friends'
-        ]
-      },
-      firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-      firebase.auth.GithubAuthProvider.PROVIDER_ID,
-      {
         provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
         // Whether the display name should be displayed in Sign Up page.
         requireDisplayName: true
       },
-      {
-        provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-        recaptchaParameters: {
-          size: getRecaptchaMode()
-        }
       }
     ],
     // Terms of service url.
