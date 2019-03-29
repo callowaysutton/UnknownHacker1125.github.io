@@ -223,9 +223,19 @@
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
 <script src="js/app.js"></script>
 Take These off when a fix is found-->
+	<script>
+	$(document).ready(function(){   
+    setTimeout(function () {
+        $("#cookieConsent").fadeIn(200);
+     }, 4000);
+    $("#closeCookieConsent, .cookieConsentOK").click(function() {
+        $("#cookieConsent").fadeOut(200);
+    }); 
+}); 
+	</script>
 	<div id="cookieConsent">
     <div id="closeCookieConsent">x</div>
-    This website is using cookies. <a href="#" target="_blank">More info</a>. <a class="cookieConsentOK">That's Fine</a>
+    I would like to buy a domain (ex:unknownhacker1125.com) for this website but need money. <a href="https://www.paypal.me/ZBourini" target="_blank">Paypal</a>. <a class="cookieConsentOK">That's Fine</a>
 </div>
 	<div class="stuff">
 		<h3>Login/SignUp</h3>
